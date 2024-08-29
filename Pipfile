@@ -6,14 +6,17 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+flask = "*"
 sqlalchemy = "*"
+flask-sqlalchemy = "*"
 eralchemy2 = "*"
 
 [requires]
 python_version = "3.10"
 
 [scripts]
-diagram="python3 src/models.py"
+diagram = "python src/models.py"
+start = "flask --app src/app run"
 
 [pipenv]
 allow_prereleases = true
